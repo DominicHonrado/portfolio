@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Certifications</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    function openCertificateModal(imageSrc, title, description, certUrl) {
+      const modal = document.getElementById('certificate-modal');
+      const modalImage = document.getElementById('modal-image');
+      const modalTitle = document.getElementById('modal-title');
+      const modalDescription = document.getElementById('modal-description');
+      const viewOfficialBtn = document.getElementById('view-official-btn');
+
+      modalImage.src = imageSrc;
+      modalTitle.textContent = title;
+      modalDescription.textContent = description;
+      viewOfficialBtn.href = certUrl || '#';
+
+      modal.classList.remove('hidden');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeCertificateModal() {
+      const modal = document.getElementById('certificate-modal');
+      modal.classList.add('hidden');
+      document.body.style.overflow = 'auto';
+    }
+
+    // Close modal when clicking outside or pressing Escape
+    document.addEventListener('DOMContentLoaded', function() {
+      const modal = document.getElementById('certificate-modal');
+      modal.addEventListener('click', function(e) {
+        if (e.target === modal) {
+          closeCertificateModal();
+        }
+      });
+
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape' && !modal.classList.contains('hidden')) {
+          closeCertificateModal();
+        }
+      });
+    });
+  </script>
+</head>
+<body class="min-h-screen bg-slate-950 text-white">
+  <!-- Navigation bar -->
+  <header class="fixed top-0 w-full bg-slate-950/90 backdrop-blur-sm border-b border-white/10 z-10">
+    <nav class="mx-auto max-w-6xl px-6 py-4">
+      <div class="flex items-center justify-between">
+        <a href="index.html" class="text-xl font-bold">Dominic Honrado</a>
+        <div class="flex space-x-6">
+          <a href="index.html" class="text-slate-300 hover:text-white transition">Home</a>
+          <a href="about.html" class="text-slate-300 hover:text-white transition">About</a>
+          <a href="skills.html" class="text-slate-300 hover:text-white transition">Skills</a>
+          <a href="certifications.html" class="text-white">Certifications</a>
+          <a href="contact.html" class="text-slate-300 hover:text-white transition">Contact</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <div class="pt-24 mx-auto max-w-4xl px-6 py-8">
+    <div class="text-center mb-8">
+      <h1 class="text-5xl font-bold mb-4">Certifications</h1>
+      <p class="text-xl text-slate-300">Here are the certifications I have obtained.</p>
+    </div>
+    <div class="space-y-6">
+      <section class="rounded-3xl border border-white/10 bg-slate-900/70 p-6 shadow-2xl">
+        <h2 class="text-2xl font-semibold mb-4 text-sky-400">Verified Skills</h2>
+        <p class="text-slate-300 mb-6">These certificates demonstrate the training and knowledge I've earned across programming, productivity, and presentation tools.</p>
+        <!-- To add official certificate URLs, replace '#' in the onclick functions below with the actual URLs -->
+        <div class="grid gap-4 sm:grid-cols-3">
+          <div class="rounded-2xl border border-white/10 bg-slate-900/75 p-4 text-center shadow-xl transition hover:-translate-y-1 hover:bg-slate-900/90">
+            <img src="images/Certificates/Cert_Java.png" alt="Java Certificate" class="mx-auto h-32 w-auto rounded-lg mb-3">
+            <h3 class="text-lg font-semibold mb-2">Java Certification</h3>
+            <p class="text-sm text-slate-400 mb-3">Java language fundamentals and software development concepts.</p>
+            <button onclick="openCertificateModal('images/Certificates/Cert_Java.png', 'Java Certification', 'Java language fundamentals and software development concepts.', '#')" class="inline-block bg-sky-600 hover:bg-sky-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition">View Certificate</button>
+          </div>
+          <div class="rounded-2xl border border-white/10 bg-slate-900/75 p-4 text-center shadow-xl transition hover:-translate-y-1 hover:bg-slate-900/90">
+            <img src="images/Certificates/Cert_Word.png" alt="Microsoft Word Certificate" class="mx-auto h-32 w-auto rounded-lg mb-3">
+            <h3 class="text-lg font-semibold mb-2">Microsoft Word</h3>
+            <p class="text-sm text-slate-400 mb-3">Document creation, formatting, and professional workflow skills.</p>
+            <button onclick="openCertificateModal('images/Certificates/Cert_Word.png', 'Microsoft Word', 'Document creation, formatting, and professional workflow skills.', '#')" class="inline-block bg-sky-600 hover:bg-sky-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition">View Certificate</button>
+          </div>
+          <div class="rounded-2xl border border-white/10 bg-slate-900/75 p-4 text-center shadow-xl transition hover:-translate-y-1 hover:bg-slate-900/90">
+            <img src="images/Certificates/Cert_PPT.png" alt="Microsoft PowerPoint Certificate" class="mx-auto h-32 w-auto rounded-lg mb-3">
+            <h3 class="text-lg font-semibold mb-2">Microsoft PowerPoint</h3>
+            <p class="text-sm text-slate-400 mb-3">Presentation design, slide structure, and visual communication.</p>
+            <button onclick="openCertificateModal('images/Certificates/Cert_PPT.png', 'Microsoft PowerPoint', 'Presentation design, slide structure, and visual communication.', '#')" class="inline-block bg-sky-600 hover:bg-sky-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition">View Certificate</button>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <!-- Certificate Modal -->
+  <div id="certificate-modal" class="fixed inset-0 bg-black/80 backdrop-blur-sm hidden z-50 flex items-center justify-center p-4">
+    <div class="bg-slate-900 rounded-2xl border border-white/10 max-w-4xl w-full max-h-[90vh] overflow-hidden shadow-2xl">
+      <div class="p-6 border-b border-white/10 flex items-center justify-between">
+        <h3 id="modal-title" class="text-2xl font-semibold text-white"></h3>
+        <button onclick="closeCertificateModal()" class="text-slate-400 hover:text-white text-2xl transition">&times;</button>
+      </div>
+      <div class="p-6">
+        <img id="modal-image" src="" alt="Certificate" class="w-full h-auto max-h-[60vh] object-contain rounded-lg mb-4">
+        <p id="modal-description" class="text-slate-300 mb-4"></p>
+        <div class="flex gap-3">
+          <a id="view-official-btn" href="#" target="_blank" class="inline-block bg-emerald-600 hover:bg-emerald-700 text-white px-6 py-2 rounded-lg font-medium transition">
+            View Official Certificate
+          </a>
+          <button onclick="closeCertificateModal()" class="bg-slate-700 hover:bg-slate-600 text-white px-6 py-2 rounded-lg font-medium transition">
+            Close
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

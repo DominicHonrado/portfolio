@@ -4,75 +4,45 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>About Me</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: linear-gradient(135deg, #1f233b, #3c4a7d);
-      color: #f5f7ff;
-    }
-    .container {
-      max-width: 900px;
-      margin: 0 auto;
-      padding: 40px 20px;
-    }
-    .hero {
-      text-align: center;
-      padding: 60px 20px;
-      border: 1px solid rgba(255,255,255,0.12);
-      border-radius: 18px;
-      background: rgba(255,255,255,0.05);
-      box-shadow: 0 20px 60px rgba(0,0,0,0.25);
-    }
-    h1 {
-      margin: 0 0 10px;
-      font-size: 3rem;
-      letter-spacing: 1px;
-    }
-    p {
-      line-height: 1.75;
-      color: #dce1ff;
-    }
-    .section {
-      margin-top: 40px;
-      padding: 30px;
-      background: rgba(255,255,255,0.06);
-      border-radius: 16px;
-      border: 1px solid rgba(255,255,255,0.08);
-    }
-    .section h2 {
-      margin-top: 0;
-      font-size: 1.8rem;
-      color: #eef3ff;
-    }
-    .skills {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-      gap: 16px;
-      margin-top: 20px;
-    }
-    .skill-item {
-      padding: 18px;
-      border-radius: 14px;
-      background: rgba(255,255,255,0.08);
-      border: 1px solid rgba(255,255,255,0.1);
-      text-align: center;
-    }
-  </style>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-  <div class="container">
-    <div class="hero">
-      <h1>About Me</h1>
-      <p>Welcome to my portfolio.</p>
+<body class="min-h-screen bg-slate-950 text-white">
+  <!-- Navigation bar -->
+  <header class="fixed top-0 w-full bg-slate-950/90 backdrop-blur-sm border-b border-white/10 z-10">
+    <nav class="mx-auto max-w-6xl px-6 py-4">
+      <div class="flex items-center justify-between">
+        <a href="index.html" class="text-xl font-bold">Dominic Honrado</a>
+        <div class="flex space-x-6">
+          <a href="index.html" class="text-slate-300 hover:text-white transition">Home</a>
+          <a href="about.html" class="text-white">About</a>
+          <a href="skills.html" class="text-slate-300 hover:text-white transition">Skills</a>
+          <a href="certifications.html" class="text-slate-300 hover:text-white transition">Certifications</a>
+          <a href="contact.html" class="text-slate-300 hover:text-white transition">Contact</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <div class="pt-24 mx-auto max-w-4xl px-6 py-16">
+    <div class="text-center mb-12">
+      <h1 class="text-5xl font-bold mb-4">About Me</h1>
+      <p class="text-xl text-slate-300">Get to know more about my journey and passion for technology.</p>
     </div>
-    <div class="section">
-      <h2>Who I Am</h2>
-      <p>sample</p>
-    </div>
-    <div class="section">
-      <h2>Work Experience</h2>
-      <p>sample</p>
+    <div class="space-y-8">
+      <section class="rounded-3xl border border-white/10 bg-slate-900/70 p-8 shadow-2xl">
+        <h2 class="text-3xl font-semibold mb-4 text-emerald-400">Who I Am</h2>
+        <p class="text-slate-300 leading-relaxed mb-4">Hi, I'm Dominic Austin Honrado, an aspiring full stack developer with a strong curiosity for computer science and technology. I enjoy learning new concepts, building practical solutions, and using code to turn ideas into working projects.</p>
+        <p class="text-slate-300 leading-relaxed">Professionally, I aim to grow into a confident software engineer who creates impactful applications and contributes to innovative teams. I am driven by opportunities to improve my skills, solve meaningful problems, and build a career around technology that makes a difference.</p>
+      </section>
+      <section class="rounded-3xl border border-white/10 bg-slate-900/70 p-8 shadow-2xl">
+        <h2 class="text-3xl font-semibold mb-4 text-sky-400">My Journey</h2>
+        <p class="text-slate-300 leading-relaxed mb-4">Starting with basic programming concepts, I've expanded my skills across multiple languages and frameworks. Each project and challenge has taught me valuable lessons about problem-solving, collaboration, and the importance of clean, maintainable code.</p>
+        <p class="text-slate-300 leading-relaxed">My goal is to develop applications that not only function well but also provide meaningful user experiences. I'm particularly interested in web development, software engineering, and emerging technologies.</p>
+      </section>
+      <section class="rounded-3xl border border-white/10 bg-slate-900/70 p-8 shadow-2xl">
+        <h2 class="text-3xl font-semibold mb-4 text-purple-400">Interests & Goals</h2>
+        <p class="text-slate-300 leading-relaxed mb-4">Beyond coding, I'm fascinated by artificial intelligence, machine learning, and how technology can shape our future. I enjoy working on projects that challenge me and allow me to learn something new.</p>
+        <p class="text-slate-300 leading-relaxed">Looking ahead, I aim to contribute to impactful projects, collaborate with talented teams, and continue growing as a developer. I'm excited about the possibilities that lie ahead in this ever-evolving field.</p>
+      </section>
     </div>
   </div>
 </body>

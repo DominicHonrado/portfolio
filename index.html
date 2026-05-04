@@ -7,194 +7,36 @@
         <script src="https://cdn.tailwindcss.com"></script>
     </head>
     <body class="min-h-screen bg-slate-950 text-white">
+        <!-- Navigation bar -->
+        <header class="fixed top-0 w-full bg-slate-950/90 backdrop-blur-sm border-b border-white/10 z-10">
+            <nav class="mx-auto max-w-6xl px-6 py-4">
+                <div class="flex items-center justify-between">
+                    <a href="index.html" class="text-xl font-bold">Dominic Honrado</a>
+                    <div class="flex space-x-6">
+                        <a href="index.html" class="text-white">Home</a>
+                        <a href="about.html" class="text-slate-300 hover:text-white transition">About</a>
+                        <a href="skills.html" class="text-slate-300 hover:text-white transition">Skills</a>
+                        <a href="certifications.html" class="text-slate-300 hover:text-white transition">Certifications</a>
+                        <a href="contact.html" class="text-slate-300 hover:text-white transition">Contact</a>
+                    </div>
+                </div>
+            </nav>
+        </header>
         <!-- Main hero section: name, intro text, and navigation buttons -->
-        <main class="mx-auto flex min-h-screen flex-col items-center justify-center gap-6 px-6 py-10 text-center">
+        <main class="mx-auto flex min-h-screen flex-col items-center justify-center gap-6 px-6 py-10 text-center pt-24">
             <img src="images/IdPictureHD.png" alt="ID Picture" class="h-40 w-40 rounded-full border-4 border-white/20 object-cover shadow-2xl">
             <div class="max-w-xl">
                 <h1 class="text-4xl font-bold tracking-tight">Dominic Austin Honrado</h1>
-                <p class="mt-4 text-base text-slate-300 sm:text-lg">Second-year college student inspired to expand my knowledge and producing real results.</p>
+                <p class="mt-4 text-base text-slate-300 sm:text-lg">Aspiring full stack developer inspired to expand my knowledge and producing real results.</p>
             </div>
             <div class="flex flex-wrap justify-center gap-4">
-                <div role="tablist" aria-label="Portfolio sections" class="flex flex-wrap justify-center gap-2 rounded-full border border-white/10 bg-slate-900/50 p-1 shadow-inner">
-                    <button type="button" data-tab="about" class="tab-button rounded-full px-5 py-2 text-sm font-semibold text-slate-300 transition hover:bg-slate-800">About Me</button>
-                    <button type="button" data-tab="skills" class="tab-button rounded-full bg-white px-5 py-2 text-sm font-semibold text-slate-950 transition hover:bg-slate-100">Technical Skills</button>
-                    <button type="button" data-tab="certifications" class="tab-button rounded-full px-5 py-2 text-sm font-semibold text-slate-300 transition hover:bg-slate-800">Certifications</button>
-                    <button type="button" data-tab="contact" class="tab-button rounded-full px-5 py-2 text-sm font-semibold text-slate-300 transition hover:bg-slate-800">Contact Me</button>
-                </div>
+                <nav aria-label="Portfolio sections" class="flex flex-wrap justify-center gap-2 rounded-full border border-white/10 bg-slate-900/50 p-1 shadow-inner">
+                    <a href="about.html" class="rounded-full px-6 py-3 text-base font-semibold text-slate-300 transition hover:bg-slate-800">About Me</a>
+                    <a href="skills.html" class="rounded-full px-6 py-3 text-base font-semibold text-slate-300 transition hover:bg-slate-800">Technical Skills</a>
+                    <a href="certifications.html" class="rounded-full px-6 py-3 text-base font-semibold text-slate-300 transition hover:bg-slate-800">Certifications</a>
+                    <a href="contact.html" class="rounded-full px-6 py-3 text-base font-semibold text-slate-300 transition hover:bg-slate-800">Contact Me</a>
+                </nav>
             </div>
         </main>
-        <!-- About section: quick summary and personal info -->
-        <section id="about" class="tab-pane hidden mx-auto max-w-4xl px-6 py-16 text-left">
-            <div class="rounded-3xl border border-white/10 bg-slate-900/70 p-8 shadow-2xl">
-                <p class="text-sm uppercase tracking-[0.35em] text-emerald-400">About Me</p>
-                <h1 class="mt-4 text-4xl font-bold">Hi, I'm Dominic</h1>
-                <p class="mt-4 text-slate-300">"Add about me paragraph one and two"</p>
-            </div>
-        </section>
-        <!-- Technical skills section: programming languages and background -->
-        <section id="skills" class="tab-pane mx-auto max-w-4xl px-6 py-16 text-left">
-            <div class="space-y-10">
-                <div class="rounded-3xl border border-white/10 bg-slate-900/70 p-8 shadow-2xl">
-                    <p class="text-sm uppercase tracking-[0.35em] text-sky-400">Programming Languages</p>
-                    <h1 class="mt-4 text-5xl font-bold">Technical Skills</h1>
-                    <p class="mt-4 max-w-2xl text-slate-300">These are the languages I have learned over the years by studying and applying them in various projects.</p>
-                </div>
-
-                <div class="grid gap-6 sm:grid-cols-3">
-                    <div class="rounded-3xl border border-white/10 bg-slate-900/75 p-6 text-center shadow-xl transition hover:-translate-y-1 hover:bg-slate-900/90">
-                        <img src="images/C_Icon.png" alt="C Icon" class="mx-auto h-24 w-24">
-                        <h3 class="mt-6 text-xl font-semibold">C</h3>
-                        <p class="mt-2 text-sm text-slate-400">Systems programming, performance, and low-level problem solving.</p>
-                    </div>
-                    <div class="rounded-3xl border border-white/10 bg-slate-900/75 p-6 text-center shadow-xl transition hover:-translate-y-1 hover:bg-slate-900/90">
-                        <img src="images/Java_Icon.svg" alt="Java Icon" class="mx-auto h-24 w-24">
-                        <h3 class="mt-6 text-xl font-semibold">Java</h3>
-                        <p class="mt-2 text-sm text-slate-400">Object-oriented design, backend development, and desktop applications.</p>
-                    </div>
-                    <div class="rounded-3xl border border-white/10 bg-slate-900/75 p-6 text-center shadow-xl transition hover:-translate-y-1 hover:bg-slate-900/90">
-                        <img src="images/SQL_Icon.svg" alt="SQL Icon" class="mx-auto h-24 w-24">
-                        <h3 class="mt-6 text-xl font-semibold">SQL</h3>
-                        <p class="mt-2 text-sm text-slate-400">Database querying, data modeling, and reliable information retrieval.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Certifications section: proof of training and skills -->
-        <section id="certifications" class="tab-pane hidden mx-auto max-w-4xl px-6 py-16 text-left">
-            <div class="space-y-10">
-                <div class="rounded-3xl border border-white/10 bg-slate-900/70 p-8 shadow-2xl">
-                    <p class="text-sm uppercase tracking-[0.35em] text-sky-400">Certifications</p>
-                    <h1 class="mt-4 text-5xl font-bold">Verified Skills</h1>
-                    <p class="mt-4 max-w-2xl text-slate-300">These certificates demonstrate the training and knowledge I’ve earned across programming, productivity, and presentation tools.</p>
-                </div>
-                <div class="grid gap-6 sm:grid-cols-3">
-                    <div class="rounded-3xl border border-white/10 bg-slate-900/75 p-6 text-center shadow-xl transition hover:-translate-y-1 hover:bg-slate-900/90">
-                        <img src="images/Cert_Java.png" alt="Java Certificate" class="cert-thumb mx-auto h-60 w-auto rounded-2xl object-cover cursor-pointer transition hover:scale-[1.02]">
-                        <h3 class="mt-6 text-xl font-semibold">Java Certification</h3>
-                        <p class="mt-2 text-sm text-slate-400">Java language fundamentals and software development concepts.</p>
-                    </div>
-                    <div class="rounded-3xl border border-white/10 bg-slate-900/75 p-6 text-center shadow-xl transition hover:-translate-y-1 hover:bg-slate-900/90">
-                        <img src="images/Cert_Word.png" alt="Microsoft Word Certificate" class="cert-thumb mx-auto h-60 w-auto rounded-2xl object-cover cursor-pointer transition hover:scale-[1.02]">
-                        <h3 class="mt-6 text-xl font-semibold">Microsoft Word</h3>
-                        <p class="mt-2 text-sm text-slate-400">Document creation, formatting, and professional workflow skills.</p>
-                    </div>
-                    <div class="rounded-3xl border border-white/10 bg-slate-900/75 p-6 text-center shadow-xl transition hover:-translate-y-1 hover:bg-slate-900/90">
-                        <img src="images/Cert_PPT.png" alt="Microsoft Powerpoint Certificate" class="cert-thumb mx-auto h-60 w-auto rounded-2xl object-cover cursor-pointer transition hover:scale-[1.02]">
-                        <h3 class="mt-6 text-xl font-semibold">Microsoft PowerPoint</h3>
-                        <p class="mt-2 text-sm text-slate-400">Presentation design, slide structure, and visual communication.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Contact section: links for professional connection -->
-        <section id="contact" class="tab-pane hidden mx-auto max-w-4xl px-6 py-16 text-left">
-            <div class="rounded-3xl border border-white/10 bg-slate-900/70 p-8 shadow-2xl">
-                <p class="text-sm uppercase tracking-[0.35em] text-emerald-400">Contact</p>
-                <h2 class="mt-4 text-5xl font-bold">Let’s connect</h2>
-                <p class="mt-4 max-w-2xl text-slate-300">Find me online on LinkedIn or GitHub, or send a quick message to start a conversation about a project or collaboration.</p>
-                <div class="mt-10 grid gap-4 sm:grid-cols-2">
-                    <a href="#" class="rounded-3xl border border-white/10 bg-slate-900/80 px-6 py-5 text-left shadow-lg transition hover:-translate-y-1 hover:bg-slate-900/95">
-                        <p class="text-sm uppercase tracking-[0.35em] text-sky-400">LinkedIn</p>
-                        <p class="mt-3 text-xl font-semibold">Connect professionally</p>
-                        <p class="mt-2 text-slate-400">Share your profile and let’s discuss opportunities.</p>
-                    </a>
-                    <a href="http://github.com/DominicHonrado" target="_blank" rel="noopener noreferrer" class="rounded-3xl border border-white/10 bg-slate-900/80 px-6 py-5 text-left shadow-lg transition hover:-translate-y-1 hover:bg-slate-900/95">
-                        <p class="text-sm uppercase tracking-[0.35em] text-sky-400">GitHub</p>
-                        <p class="mt-3 text-xl font-semibold">View my projects</p>
-                        <p class="mt-2 text-slate-400">Browse code samples, apps, and repositories I’ve built.</p>
-                    </a>
-                </div>
-            </div>
-        </section>
-        <!-- Image overlay for enlarged certificate preview -->
-        <div id="image-overlay" class="fixed inset-0 z-50 hidden flex items-center justify-center bg-black/85 p-4">
-            <button id="overlay-close" class="absolute right-4 top-4 rounded-full bg-white/10 px-4 py-2 text-sm text-white transition hover:bg-white/20">Close</button>
-            <div class="max-h-[90vh] max-w-[90vw] overflow-hidden rounded-3xl border border-white/10 bg-slate-950 p-4 shadow-2xl">
-                <img id="overlay-img" src="" alt="Enlarged certificate" class="max-h-[80vh] max-w-[80vw] object-contain">
-                <p id="overlay-caption" class="mt-4 text-center text-sm text-slate-300"></p>
-            </div>
-        </div>
-        <button id="back-to-top" type="button" class="fixed bottom-6 right-6 z-50 hidden h-14 w-14 items-center justify-center rounded-full bg-slate-800/90 text-white shadow-xl transition hover:bg-slate-700" aria-label="Back to top">
-            ↑
-        </button>
-        <script>
-            // Tab navigation for the main content sections.
-            const tabButtons = document.querySelectorAll('.tab-button');
-            const tabPanes = document.querySelectorAll('.tab-pane');
-            const backToTopButton = document.getElementById('back-to-top');
-
-            function setActiveTab(tabId) {
-                tabButtons.forEach(button => {
-                    const isActive = button.dataset.tab === tabId;
-                    button.classList.toggle('bg-white', isActive);
-                    button.classList.toggle('text-slate-950', isActive);
-                    button.classList.toggle('text-slate-300', !isActive);
-                });
-
-                tabPanes.forEach(pane => {
-                    pane.classList.toggle('hidden', pane.id !== tabId);
-                });
-
-                const activePane = document.getElementById(tabId);
-                if (activePane) {
-                    activePane.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                }
-            }
-
-            tabButtons.forEach(button => {
-                button.addEventListener('click', () => setActiveTab(button.dataset.tab));
-            });
-
-            setActiveTab('skills');
-
-            // Show a back-to-top button once the user scrolls down.
-            window.addEventListener('scroll', () => {
-                const shouldShow = window.scrollY > 300;
-                backToTopButton.classList.toggle('hidden', !shouldShow);
-            });
-
-            backToTopButton.addEventListener('click', () => {
-                window.scrollTo({ top: 0, behavior: 'smooth' });
-            });
-
-            // Overlay elements used to show an enlarged certificate image.
-            const overlay = document.getElementById('image-overlay');
-            const overlayImg = document.getElementById('overlay-img');
-            const overlayCaption = document.getElementById('overlay-caption');
-            const closeButton = document.getElementById('overlay-close');
-
-            // Add a click handler to each certificate thumbnail.
-            document.querySelectorAll('.cert-thumb').forEach(img => {
-                img.addEventListener('click', () => {
-                    overlayImg.src = img.src;
-                    overlayImg.alt = img.alt;
-                    overlayCaption.textContent = img.alt;
-                    overlay.classList.remove('hidden');
-                    document.body.classList.add('overflow-hidden');
-                });
-            });
-
-            // Hide the overlay and remove extra page scroll locking.
-            function closeOverlay() {
-                overlay.classList.add('hidden');
-                document.body.classList.remove('overflow-hidden');
-                overlayImg.src = '';
-            }
-
-            // Close the overlay when clicking outside the image or pressing the close button.
-            overlay.addEventListener('click', event => {
-                if (event.target === overlay || event.target === closeButton) {
-                    closeOverlay();
-                }
-            });
-            closeButton.addEventListener('click', closeOverlay);
-
-            // Allow closing the overlay with the Escape key.
-            document.addEventListener('keydown', event => {
-                if (event.key === 'Escape' && !overlay.classList.contains('hidden')) {
-                    closeOverlay();
-                }
-            });
-        </script>
     </body>
 </html>

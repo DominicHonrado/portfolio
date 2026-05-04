@@ -4,67 +4,66 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Technical Skills</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: linear-gradient(135deg, #1f233b, #3c4a7d);
-      color: #f5f7ff;
-    }
-    .container {
-      max-width: 900px;
-      margin: 0 auto;
-      padding: 40px 20px;
-    }
-    .hero {
-      text-align: center;
-      padding: 60px 20px;
-      border: 1px solid rgba(255,255,255,0.12);
-      border-radius: 18px;
-      background: rgba(255,255,255,0.05);
-      box-shadow: 0 20px 60px rgba(0,0,0,0.25);
-    }
-    h1 {
-      margin: 0 0 10px;
-      font-size: 3rem;
-      letter-spacing: 1px;
-    }
-    p {
-      line-height: 1.75;
-      color: #dce1ff;
-    }
-    .section {
-      margin-top: 40px;
-      padding: 30px;
-      background: rgba(255,255,255,0.06);
-      border-radius: 16px;
-      border: 1px solid rgba(255,255,255,0.08);
-    }
-    .section h2 {
-      margin-top: 0;
-      font-size: 1.8rem;
-      color: #eef3ff;
-    }
-    .skills {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-      gap: 16px;
-      margin-top: 20px;
-    }
-    .skill-item {
-      padding: 18px;
-      border-radius: 14px;
-      background: rgba(255,255,255,0.08);
-      border: 1px solid rgba(255,255,255,0.1);
-      text-align: center;
-    }
-  </style>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-  <div class="container">
-    <div class="hero">
-      <h1>Technical Skills</h1>
-      <p>Here are the technologies and tools I'm proficient in.</p>
+<body class="min-h-screen bg-slate-950 text-white">
+  <!-- Navigation bar -->
+  <header class="fixed top-0 w-full bg-slate-950/90 backdrop-blur-sm border-b border-white/10 z-10">
+    <nav class="mx-auto max-w-6xl px-6 py-4">
+      <div class="flex items-center justify-between">
+        <a href="index.html" class="text-xl font-bold">Dominic Honrado</a>
+        <div class="flex space-x-6">
+          <a href="index.html" class="text-slate-300 hover:text-white transition">Home</a>
+          <a href="about.html" class="text-slate-300 hover:text-white transition">About</a>
+          <a href="skills.html" class="text-white">Skills</a>
+          <a href="certifications.html" class="text-slate-300 hover:text-white transition">Certifications</a>
+          <a href="contact.html" class="text-slate-300 hover:text-white transition">Contact</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <div class="pt-24 mx-auto max-w-4xl px-6 py-8">
+    <div class="text-center mb-8">
+      <h1 class="text-5xl font-bold mb-4">Technical Skills</h1>
+      <p class="text-xl text-slate-300">Here are the languages and tools I'm proficient in.</p>
     </div>
+    <div class="space-y-6">
+      <section class="rounded-3xl border border-white/10 bg-slate-900/70 p-6 shadow-2xl">
+        <h2 class="text-2xl font-semibold mb-4 text-sky-400">Programming Languages</h2>
+        <div class="grid gap-4 sm:grid-cols-3">
+          <div class="rounded-2xl border border-white/10 bg-slate-900/75 p-4 text-center shadow-xl transition hover:-translate-y-1 hover:bg-slate-900/90">
+            <img src="images/Icons/C_Icon.png" alt="C Icon" class="mx-auto h-16 w-20 object-contain mb-3">
+            <h3 class="text-lg font-semibold">C</h3>
+            <p class="text-sm text-slate-400">Systems programming, performance, and low-level problem solving.</p>
+          </div>
+          <div class="rounded-2xl border border-white/10 bg-slate-900/75 p-4 text-center shadow-xl transition hover:-translate-y-1 hover:bg-slate-900/90">
+            <img src="images/Icons/Java_Icon.svg" alt="Java Icon" class="mx-auto h-16 w-20 object-contain mb-3">
+            <h3 class="text-lg font-semibold">Java</h3>
+            <p class="text-sm text-slate-400">Object-oriented design, backend development, and desktop applications.</p>
+          </div>
+          <div class="rounded-2xl border border-white/10 bg-slate-900/75 p-4 text-center shadow-xl transition hover:-translate-y-1 hover:bg-slate-900/90">
+            <img src="images/Icons/SQL_Icon.svg" alt="SQL Icon" class="mx-auto h-16 w-20 object-contain mb-3">
+            <h3 class="text-lg font-semibold">SQL</h3>
+            <p class="text-sm text-slate-400">Database querying, data modeling, and reliable information retrieval.</p>
+          </div>
+        </div>
+      </section>
+      <section class="rounded-3xl border border-white/10 bg-slate-900/70 p-6 shadow-2xl">
+        <h2 class="text-2xl font-semibold mb-4 text-emerald-400">Programming Tools</h2>
+        <div class="grid gap-4 sm:grid-cols-2">
+          <div class="rounded-2xl border border-white/10 bg-slate-900/75 p-4 text-center shadow-xl transition hover:-translate-y-1 hover:bg-slate-900/90">
+            <img src="images/Icons/NetBeans_Icon.svg" alt="Apache NetBeans Icon" class="mx-auto h-16 w-20 object-contain mb-3">
+            <h3 class="text-lg font-semibold">Apache NetBeans</h3>
+            <p class="text-sm text-slate-400">Integrated development environment for Java and web application development.</p>
+          </div>
+          <div class="rounded-2xl border border-white/10 bg-slate-900/75 p-4 text-center shadow-xl transition hover:-translate-y-1 hover:bg-slate-900/90">
+            <img src="images/Icons/VSCode_Icon.svg" alt="VS Code Icon" class="mx-auto h-16 w-20 object-contain mb-3">
+            <h3 class="text-lg font-semibold">VS Code</h3>
+            <p class="text-sm text-slate-400">Lightweight code editor with powerful extensions and debugging capabilities.</p>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
 </body>
 </html>
