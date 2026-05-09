@@ -18,11 +18,19 @@
   <header class="fixed top-0 w-full bg-slate-950/90 backdrop-blur-sm border-b border-white/10 z-10">
     <nav class="mx-auto max-w-6xl px-6 py-4">
       <div class="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
-        <a href="index.html" class="text-xl font-bold">Dominic Honrado</a>
-        <div class="flex flex-wrap justify-center gap-3 sm:justify-end">
+        <div class="flex items-center justify-between w-full sm:w-auto">
+          <a href="index.html" class="text-xl font-bold">Dominic Honrado</a>
+          <button id="nav-toggle" class="sm:hidden inline-flex items-center justify-center rounded-full border border-white/10 bg-slate-900/80 p-2 text-slate-300 hover:text-white transition">
+            <span class="sr-only">Toggle navigation</span>
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M4 8h16M4 16h16" />
+            </svg>
+          </button>
+        </div>
+        <div id="nav-links" class="hidden flex-col items-center gap-3 sm:flex sm:flex-row sm:flex-wrap sm:justify-end">
           <a href="index.html" class="text-slate-300 hover:text-white transition">Home</a>
           <a href="about.html" class="text-slate-300 hover:text-white transition">About</a>
-          <a href="skills.html" class="text-white">Skills</a>
+          <a href="skills.html" class="text-slate-300 hover:text-white transition">Skills</a>
           <a href="certifications.html" class="text-slate-300 hover:text-white transition">Certifications</a>
           <a href="contact.html" class="text-slate-300 hover:text-white transition">Contact</a>
         </div>
@@ -35,35 +43,35 @@
       <p class="text-lg sm:text-xl text-slate-300">Here are the languages and tools I'm proficient in.</p>
     </div>
     <div class="space-y-6">
-      <section class="rounded-3xl border border-white/10 bg-slate-900/70 p-6 shadow-2xl">
+      <section class="reveal opacity-0 translate-y-6 rounded-3xl border border-white/10 bg-slate-900/70 p-6 shadow-2xl transition-all duration-700 ease-out">
         <h2 class="text-2xl font-semibold mb-4 text-sky-400">Programming Languages</h2>
         <div class="grid gap-4 sm:grid-cols-3">
-          <div class="rounded-2xl border border-white/10 bg-slate-900/75 p-4 text-center shadow-xl transition hover:-translate-y-1 hover:bg-slate-900/90">
+          <div class="reveal opacity-0 translate-y-6 rounded-2xl border border-white/10 bg-slate-900/75 p-4 text-center shadow-xl transition-transform duration-300 ease-out hover:-translate-y-2 hover:scale-105 hover:shadow-2xl hover:bg-slate-900/90">
             <img src="images/Icons/C_Icon.png" alt="C Icon" class="mx-auto h-16 w-20 object-contain mb-3">
             <h3 class="text-lg font-semibold">C</h3>
             <p class="text-sm text-slate-400">Systems programming, performance, and low-level problem solving.</p>
           </div>
-          <div class="rounded-2xl border border-white/10 bg-slate-900/75 p-4 text-center shadow-xl transition hover:-translate-y-1 hover:bg-slate-900/90">
+          <div class="reveal opacity-0 translate-y-6 rounded-2xl border border-white/10 bg-slate-900/75 p-4 text-center shadow-xl transition-transform duration-300 ease-out hover:-translate-y-2 hover:scale-105 hover:shadow-2xl hover:bg-slate-900/90">
             <img src="images/Icons/Java_Icon.svg" alt="Java Icon" class="mx-auto h-16 w-20 object-contain mb-3">
             <h3 class="text-lg font-semibold">Java</h3>
             <p class="text-sm text-slate-400">Object-oriented design, backend development, and desktop applications.</p>
           </div>
-          <div class="rounded-2xl border border-white/10 bg-slate-900/75 p-4 text-center shadow-xl transition hover:-translate-y-1 hover:bg-slate-900/90">
+          <div class="reveal opacity-0 translate-y-6 rounded-2xl border border-white/10 bg-slate-900/75 p-4 text-center shadow-xl transition-transform duration-300 ease-out hover:-translate-y-2 hover:scale-105 hover:shadow-2xl hover:bg-slate-900/90">
             <img src="images/Icons/SQL_Icon.svg" alt="SQL Icon" class="mx-auto h-16 w-20 object-contain mb-3">
             <h3 class="text-lg font-semibold">SQL</h3>
             <p class="text-sm text-slate-400">Database querying, data modeling, and reliable information retrieval.</p>
           </div>
         </div>
       </section>
-      <section class="rounded-3xl border border-white/10 bg-slate-900/70 p-6 shadow-2xl">
+      <section class="reveal opacity-0 translate-y-6 rounded-3xl border border-white/10 bg-slate-900/70 p-6 shadow-2xl transition-all duration-700 ease-out">
         <h2 class="text-2xl font-semibold mb-4 text-emerald-400">Programming Tools</h2>
         <div class="grid gap-4 sm:grid-cols-2">
-          <div class="rounded-2xl border border-white/10 bg-slate-900/75 p-4 text-center shadow-xl transition hover:-translate-y-1 hover:bg-slate-900/90">
+          <div class="reveal opacity-0 translate-y-6 rounded-2xl border border-white/10 bg-slate-900/75 p-4 text-center shadow-xl transition-transform duration-300 ease-out hover:-translate-y-2 hover:scale-105 hover:shadow-2xl hover:bg-slate-900/90">
             <img src="images/Icons/NetBeans_Icon.svg" alt="Apache NetBeans Icon" class="mx-auto h-16 w-20 object-contain mb-3">
             <h3 class="text-lg font-semibold">Apache NetBeans</h3>
             <p class="text-sm text-slate-400">Integrated development environment for Java and web application development.</p>
           </div>
-          <div class="rounded-2xl border border-white/10 bg-slate-900/75 p-4 text-center shadow-xl transition hover:-translate-y-1 hover:bg-slate-900/90">
+          <div class="reveal opacity-0 translate-y-6 rounded-2xl border border-white/10 bg-slate-900/75 p-4 text-center shadow-xl transition-transform duration-300 ease-out hover:-translate-y-2 hover:scale-105 hover:shadow-2xl hover:bg-slate-900/90">
             <img src="images/Icons/VSCode_Icon.svg" alt="VS Code Icon" class="mx-auto h-16 w-20 object-contain mb-3">
             <h3 class="text-lg font-semibold">VS Code</h3>
             <p class="text-sm text-slate-400">Lightweight code editor with powerful extensions and debugging capabilities.</p>
@@ -72,5 +80,6 @@
       </section>
     </div>
   </div>
+  <script src="scripts.js"></script>
 </body>
 </html>

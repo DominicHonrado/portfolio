@@ -57,12 +57,20 @@
   <header class="fixed top-0 w-full bg-slate-950/90 backdrop-blur-sm border-b border-white/10 z-10">
     <nav class="mx-auto max-w-6xl px-6 py-4">
       <div class="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
-        <a href="index.html" class="text-xl font-bold">Dominic Honrado</a>
-        <div class="flex flex-wrap justify-center gap-3 sm:justify-end">
+        <div class="flex items-center justify-between w-full sm:w-auto">
+          <a href="index.html" class="text-xl font-bold">Dominic Honrado</a>
+          <button id="nav-toggle" class="sm:hidden inline-flex items-center justify-center rounded-full border border-white/10 bg-slate-900/80 p-2 text-slate-300 hover:text-white transition">
+            <span class="sr-only">Toggle navigation</span>
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M4 8h16M4 16h16" />
+            </svg>
+          </button>
+        </div>
+        <div id="nav-links" class="hidden flex-col items-center gap-3 sm:flex sm:flex-row sm:flex-wrap sm:justify-end">
           <a href="index.html" class="text-slate-300 hover:text-white transition">Home</a>
           <a href="about.html" class="text-slate-300 hover:text-white transition">About</a>
           <a href="skills.html" class="text-slate-300 hover:text-white transition">Skills</a>
-          <a href="certifications.html" class="text-white">Certifications</a>
+          <a href="certifications.html" class="text-slate-300 hover:text-white transition">Certifications</a>
           <a href="contact.html" class="text-slate-300 hover:text-white transition">Contact</a>
         </div>
       </div>
@@ -74,24 +82,24 @@
       <p class="text-lg sm:text-xl text-slate-300">Here are the certifications I have obtained.</p>
     </div>
     <div class="space-y-6">
-      <section class="rounded-3xl border border-white/10 bg-slate-900/70 p-6 shadow-2xl">
+      <section class="reveal opacity-0 translate-y-6 rounded-3xl border border-white/10 bg-slate-900/70 p-6 shadow-2xl transition-all duration-700 ease-out">
         <h2 class="text-2xl font-semibold mb-4 text-sky-400">Verified Skills</h2>
         <p class="text-slate-300 mb-6">These certificates demonstrate the training and knowledge I've earned across programming, productivity, and presentation tools.</p>
         <!-- To add official certificate URLs, replace '#' in the onclick functions below with the actual URLs -->
         <div class="grid gap-4 sm:grid-cols-3">
-          <div class="rounded-2xl border border-white/10 bg-slate-900/75 p-4 text-center shadow-xl transition hover:-translate-y-1 hover:bg-slate-900/90">
+          <div class="reveal opacity-0 translate-y-6 rounded-2xl border border-white/10 bg-slate-900/75 p-4 text-center shadow-xl transition-transform duration-300 ease-out hover:-translate-y-2 hover:scale-105 hover:shadow-2xl hover:bg-slate-900/90">
             <img src="images/Certificates/Cert_Java.png" alt="Java Certificate" class="mx-auto h-32 w-auto rounded-lg mb-3">
             <h3 class="text-lg font-semibold mb-2">Java Certification</h3>
             <p class="text-sm text-slate-400 mb-3">Java language fundamentals and software development concepts.</p>
             <button onclick="openCertificateModal('images/Certificates/Cert_Java.png', 'Java Certification', 'Java language fundamentals and software development concepts.', '#')" class="inline-block bg-sky-600 hover:bg-sky-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition">View Certificate</button>
           </div>
-          <div class="rounded-2xl border border-white/10 bg-slate-900/75 p-4 text-center shadow-xl transition hover:-translate-y-1 hover:bg-slate-900/90">
+          <div class="reveal opacity-0 translate-y-6 rounded-2xl border border-white/10 bg-slate-900/75 p-4 text-center shadow-xl transition-transform duration-300 ease-out hover:-translate-y-2 hover:scale-105 hover:shadow-2xl hover:bg-slate-900/90">
             <img src="images/Certificates/Cert_Word.png" alt="Microsoft Word Certificate" class="mx-auto h-32 w-auto rounded-lg mb-3">
             <h3 class="text-lg font-semibold mb-2">Microsoft Word</h3>
             <p class="text-sm text-slate-400 mb-3">Document creation, formatting, and professional workflow skills.</p>
             <button onclick="openCertificateModal('images/Certificates/Cert_Word.png', 'Microsoft Word', 'Document creation, formatting, and professional workflow skills.', '#')" class="inline-block bg-sky-600 hover:bg-sky-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition">View Certificate</button>
           </div>
-          <div class="rounded-2xl border border-white/10 bg-slate-900/75 p-4 text-center shadow-xl transition hover:-translate-y-1 hover:bg-slate-900/90">
+          <div class="reveal opacity-0 translate-y-6 rounded-2xl border border-white/10 bg-slate-900/75 p-4 text-center shadow-xl transition-transform duration-300 ease-out hover:-translate-y-2 hover:scale-105 hover:shadow-2xl hover:bg-slate-900/90">
             <img src="images/Certificates/Cert_PPT.png" alt="Microsoft PowerPoint Certificate" class="mx-auto h-32 w-auto rounded-lg mb-3">
             <h3 class="text-lg font-semibold mb-2">Microsoft PowerPoint</h3>
             <p class="text-sm text-slate-400 mb-3">Presentation design, slide structure, and visual communication.</p>
@@ -123,5 +131,6 @@
       </div>
     </div>
   </div>
+  <script src="scripts.js"></script>
 </body>
 </html>
