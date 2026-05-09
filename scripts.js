@@ -51,8 +51,10 @@ document.addEventListener('DOMContentLoaded', () => {
   initReveal();
 });
 
-window.addEventListener('pageshow', (event) => {
-  if (event.persisted) {
-    initReveal();
-  }
+window.addEventListener('pageshow', () => {
+  initReveal();
+});
+
+window.addEventListener('load', () => {
+  initReveal();
 });
