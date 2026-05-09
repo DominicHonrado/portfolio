@@ -3,54 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Certifications</title>
+  <title>Dominic Austin Honrado | Certifications</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
   <script src="https://cdn.tailwindcss.com"></script>
-  <style>
-    body { font-family: 'Inter', sans-serif; }
-    h1, h2, h3, h4, h5, h6, .font-bold, .font-semibold { font-family: 'Space Grotesk', sans-serif; }
-  </style>
-  <script>
-    function openCertificateModal(imageSrc, title, description, certUrl) {
-      const modal = document.getElementById('certificate-modal');
-      const modalImage = document.getElementById('modal-image');
-      const modalTitle = document.getElementById('modal-title');
-      const modalDescription = document.getElementById('modal-description');
-      const viewOfficialBtn = document.getElementById('view-official-btn');
-
-      modalImage.src = imageSrc;
-      modalTitle.textContent = title;
-      modalDescription.textContent = description;
-      viewOfficialBtn.href = certUrl || '#';
-
-      modal.classList.remove('hidden');
-      document.body.style.overflow = 'hidden';
-    }
-
-    function closeCertificateModal() {
-      const modal = document.getElementById('certificate-modal');
-      modal.classList.add('hidden');
-      document.body.style.overflow = 'auto';
-    }
-
-    // Close modal when clicking outside or pressing Escape
-    document.addEventListener('DOMContentLoaded', function() {
-      const modal = document.getElementById('certificate-modal');
-      modal.addEventListener('click', function(e) {
-        if (e.target === modal) {
-          closeCertificateModal();
-        }
-      });
-
-      document.addEventListener('keydown', function(e) {
-        if (e.key === 'Escape' && !modal.classList.contains('hidden')) {
-          closeCertificateModal();
-        }
-      });
-    });
-  </script>
 </head>
 <body class="min-h-screen bg-slate-950 text-white">
   <!-- Navigation bar -->
@@ -66,12 +24,12 @@
             </svg>
           </button>
         </div>
-        <div id="nav-links" class="hidden flex-col items-center gap-3 sm:flex sm:flex-row sm:flex-wrap sm:justify-end">
-          <a href="index.html" class="text-slate-300 hover:text-white transition">Home</a>
-          <a href="about.html" class="text-slate-300 hover:text-white transition">About</a>
-          <a href="skills.html" class="text-slate-300 hover:text-white transition">Skills</a>
-          <a href="certifications.html" class="text-slate-300 hover:text-white transition">Certifications</a>
-          <a href="contact.html" class="text-slate-300 hover:text-white transition">Contact</a>
+        <div id="nav-links" class="hidden flex-col gap-3 sm:flex sm:flex-row sm:flex-wrap sm:justify-end">
+          <a href="index.html" class="block text-slate-300 hover:text-white transition">Home</a>
+          <a href="about.html" class="block text-slate-300 hover:text-white transition">About</a>
+          <a href="skills.html" class="block text-slate-300 hover:text-white transition">Skills</a>
+          <a href="certifications.html" class="block text-slate-300 hover:text-white transition">Certifications</a>
+          <a href="contact.html" class="block text-slate-300 hover:text-white transition">Contact</a>
         </div>
       </div>
     </nav>
@@ -88,22 +46,22 @@
         <!-- To add official certificate URLs, replace '#' in the onclick functions below with the actual URLs -->
         <div class="grid gap-4 sm:grid-cols-3">
           <div class="reveal opacity-0 translate-y-6 rounded-2xl border border-white/10 bg-slate-900/75 p-4 text-center shadow-xl transition-transform duration-300 ease-out hover:-translate-y-2 hover:scale-105 hover:shadow-2xl hover:bg-slate-900/90">
-            <img src="images/Certificates/Cert_Java.png" alt="Java Certificate" class="mx-auto h-32 w-auto rounded-lg mb-3">
-            <h3 class="text-lg font-semibold mb-2">Java Certification</h3>
+            <img src="images/Certificates/Cert_Java.png" alt="Information Technology Specialist (Java) Certificate" class="mx-auto h-32 w-auto rounded-lg mb-3 cursor-pointer" data-cert-image="images/Certificates/Cert_Java.png" data-cert-title="Information Technology Specialist (Java)" data-cert-description="Java language fundamentals and software development concepts." data-cert-url="https://www.certiport.com/portal/Pages/PrintTranscriptInfo.aspx?action=Cert&id=472&cvid=3kv2PLH9H3p/mixLwfAxQg==">
+            <h3 class="text-lg font-semibold mb-2">Information Technology Specialist (Java)</h3>
             <p class="text-sm text-slate-400 mb-3">Java language fundamentals and software development concepts.</p>
-            <button onclick="openCertificateModal('images/Certificates/Cert_Java.png', 'Java Certification', 'Java language fundamentals and software development concepts.', '#')" class="inline-block bg-sky-600 hover:bg-sky-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition">View Certificate</button>
+            <a href="https://www.certiport.com/portal/Pages/PrintTranscriptInfo.aspx?action=Cert&id=472&cvid=3kv2PLH9H3p/mixLwfAxQg==" target="_blank" rel="noopener noreferrer" class="inline-block bg-emerald-600 hover:bg-emerald-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition">View Official Certificate</a>
           </div>
           <div class="reveal opacity-0 translate-y-6 rounded-2xl border border-white/10 bg-slate-900/75 p-4 text-center shadow-xl transition-transform duration-300 ease-out hover:-translate-y-2 hover:scale-105 hover:shadow-2xl hover:bg-slate-900/90">
-            <img src="images/Certificates/Cert_Word.png" alt="Microsoft Word Certificate" class="mx-auto h-32 w-auto rounded-lg mb-3">
-            <h3 class="text-lg font-semibold mb-2">Microsoft Word</h3>
+            <img src="images/Certificates/Cert_Word.png" alt="Microsoft Office Specialist (Word) Certificate" class="mx-auto h-32 w-auto rounded-lg mb-3 cursor-pointer" data-cert-image="images/Certificates/Cert_Word.png" data-cert-title="Microsoft Office Specialist (Word)" data-cert-description="Document creation, formatting, and professional workflow skills." data-cert-url="https://www.certiport.com/portal/Pages/PrintTranscriptInfo.aspx?action=Cert&id=498&cvid=X/m/khmBfw34TdTD54qMdA==">
+            <h3 class="text-lg font-semibold mb-2">Microsoft Office Specialist (Word)</h3>
             <p class="text-sm text-slate-400 mb-3">Document creation, formatting, and professional workflow skills.</p>
-            <button onclick="openCertificateModal('images/Certificates/Cert_Word.png', 'Microsoft Word', 'Document creation, formatting, and professional workflow skills.', '#')" class="inline-block bg-sky-600 hover:bg-sky-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition">View Certificate</button>
+            <a href="https://www.certiport.com/portal/Pages/PrintTranscriptInfo.aspx?action=Cert&id=498&cvid=X/m/khmBfw34TdTD54qMdA==" target="_blank" rel="noopener noreferrer" class="inline-block bg-emerald-600 hover:bg-emerald-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition">View Official Certificate</a>
           </div>
           <div class="reveal opacity-0 translate-y-6 rounded-2xl border border-white/10 bg-slate-900/75 p-4 text-center shadow-xl transition-transform duration-300 ease-out hover:-translate-y-2 hover:scale-105 hover:shadow-2xl hover:bg-slate-900/90">
-            <img src="images/Certificates/Cert_PPT.png" alt="Microsoft PowerPoint Certificate" class="mx-auto h-32 w-auto rounded-lg mb-3">
-            <h3 class="text-lg font-semibold mb-2">Microsoft PowerPoint</h3>
+            <img src="images/Certificates/Cert_PPT.png" alt="Microsoft Office Specialist (PowerPoint) Certificate" class="mx-auto h-32 w-auto rounded-lg mb-3 cursor-pointer" data-cert-image="images/Certificates/Cert_PPT.png" data-cert-title="Microsoft Office Specialist (PowerPoint)" data-cert-description="Presentation design, slide structure, and visual communication." data-cert-url="https://www.certiport.com/portal/Pages/PrintTranscriptInfo.aspx?action=Cert&id=500&cvid=qCivG9l3gfF6cPT9hQV2Kg==">
+            <h3 class="text-lg font-semibold mb-2">Microsoft Office Specialist (PowerPoint)</h3>
             <p class="text-sm text-slate-400 mb-3">Presentation design, slide structure, and visual communication.</p>
-            <button onclick="openCertificateModal('images/Certificates/Cert_PPT.png', 'Microsoft PowerPoint', 'Presentation design, slide structure, and visual communication.', '#')" class="inline-block bg-sky-600 hover:bg-sky-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition">View Certificate</button>
+            <a href="https://www.certiport.com/portal/Pages/PrintTranscriptInfo.aspx?action=Cert&id=500&cvid=qCivG9l3gfF6cPT9hQV2Kg==" target="_blank" rel="noopener noreferrer" class="inline-block bg-emerald-600 hover:bg-emerald-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition">View Official Certificate</a>
           </div>
         </div>
       </section>
@@ -115,7 +73,7 @@
     <div class="bg-slate-900 rounded-2xl border border-white/10 max-w-4xl w-full max-h-[90vh] overflow-hidden shadow-2xl">
       <div class="p-6 border-b border-white/10 flex items-center justify-between">
         <h3 id="modal-title" class="text-2xl font-semibold text-white"></h3>
-        <button onclick="closeCertificateModal()" class="text-slate-400 hover:text-white text-2xl transition">&times;</button>
+        <button data-close-modal class="text-slate-400 hover:text-white text-2xl transition">&times;</button>
       </div>
       <div class="p-6">
         <img id="modal-image" src="" alt="Certificate" class="w-full h-auto max-h-[60vh] object-contain rounded-lg mb-4">
@@ -124,7 +82,7 @@
           <a id="view-official-btn" href="#" target="_blank" class="inline-block bg-emerald-600 hover:bg-emerald-700 text-white px-6 py-2 rounded-lg font-medium transition">
             View Official Certificate
           </a>
-          <button onclick="closeCertificateModal()" class="bg-slate-700 hover:bg-slate-600 text-white px-6 py-2 rounded-lg font-medium transition">
+          <button data-close-modal class="bg-slate-700 hover:bg-slate-600 text-white px-6 py-2 rounded-lg font-medium transition">
             Close
           </button>
         </div>
@@ -132,5 +90,6 @@
     </div>
   </div>
   <script src="scripts.js"></script>
+  <script src="certifications.js"></script>
 </body>
 </html>

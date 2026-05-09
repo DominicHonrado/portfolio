@@ -46,9 +46,32 @@ function initReveal() {
   });
 }
 
+function updateStats() {
+  // Update certifications count by fetching and parsing certifications.html
+  fetch('certifications.html')
+    .then(response => response.text())
+    .then(html => {
+      const parser = new DOMParser();
+      const doc = parser.parseFromString(html, 'text/html');
+      const certImages = doc.querySelectorAll('img[data-cert-image]');
+      const count = certImages.length;
+      const certElement = document.querySelector('.certifications-count');
+      if (certElement) certElement.textContent = count;
+    })
+    .catch(err => console.error('Error fetching certifications:', err));
+
+  // Update years coding
+  const startYear = 2024;
+  const currentYear = new Date().getFullYear();
+  const years = currentYear - startYear;
+  const yearsElement = document.querySelector('.years-coding');
+  if (yearsElement) yearsElement.textContent = years;
+}
+
 document.addEventListener('DOMContentLoaded', () => {
   initNavigation();
   initReveal();
+  updateStats();
 });
 
 window.addEventListener('pageshow', () => {
