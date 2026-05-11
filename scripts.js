@@ -63,35 +63,6 @@ function initReveal() {
 }
 
 /* ==========================================
-   DYNAMIC CONTENT FUNCTIONS - Auto-updating stats
-   ========================================== */
-
-/**
- * Updates dynamic statistics on the home page (certifications count and years coding)
- */
-function updateStats() {
-  // Update certifications count by fetching and parsing certifications.html
-  fetch('certifications.html')
-    .then(response => response.text())
-    .then(html => {
-      const parser = new DOMParser();
-      const doc = parser.parseFromString(html, 'text/html');
-      const certImages = doc.querySelectorAll('img[data-cert-image]');
-      const count = certImages.length;
-      const certElement = document.querySelector('.certifications-count');
-      if (certElement) certElement.textContent = count;
-    })
-    .catch(err => console.error('Error fetching certifications:', err));
-
-  // Update years coding based on current year
-  const startYear = 2024;
-  const currentYear = new Date().getFullYear();
-  const years = currentYear - startYear;
-  const yearsElement = document.querySelector('.years-coding');
-  if (yearsElement) yearsElement.textContent = years;
-}
-
-/* ==========================================
    EVENT LISTENERS - Page load and navigation events
    ========================================== */
 
@@ -99,7 +70,6 @@ function updateStats() {
 document.addEventListener('DOMContentLoaded', () => {
   initNavigation();
   initReveal();
-  updateStats();
 });
 
 // Re-initialize reveals on page navigation (for back/forward buttons)
