@@ -1,15 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact Me | Dominic Austin Honrado</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
-  <script src="https://cdn.tailwindcss.com"></script>
-</head>
+    <!-- ==========================================
+         HEAD SECTION - Meta tags, fonts, styles
+         ========================================== -->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contact Me | Dominic Austin Honrado</title>
+
+        <!-- Font preloading for better performance -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+
+        <!-- External stylesheets -->
+        <link rel="stylesheet" href="styles.css">
+        <script src="https://cdn.tailwindcss.com"></script>
+    </head>
 <body class="min-h-screen bg-slate-950 text-white">
   <!-- Navigation bar -->
   <header class="fixed top-0 w-full bg-slate-950/90 backdrop-blur-sm border-b border-white/10 z-10">
@@ -34,32 +41,42 @@
       </div>
     </nav>
   </header>
-  <div class="pt-24 mx-auto max-w-4xl px-6 py-8">
-    <div class="text-center mb-8">
-      <h1 class="text-4xl sm:text-5xl font-bold mb-4">Contact Me</h1>
-      <p class="text-lg sm:text-xl text-slate-300">Feel free to reach out if you have any questions or would like to collaborate!</p>
-    </div>
-    <div class="space-y-6">
-      <section class="reveal opacity-0 translate-y-6 rounded-3xl border border-white/10 bg-slate-900/70 p-6 shadow-2xl transition-all duration-700 ease-out">
-        <h2 class="text-2xl font-semibold mb-4 text-emerald-400">Get In Touch</h2>
-        <p class="text-slate-300 mb-6">I'm always open to discussing new opportunities, interesting projects, or just having a chat about technology.</p>
-        <div class="grid gap-4 sm:grid-cols-2">
-          <a href="https://www.linkedin.com/in/dominic-honrado" target="_blank" rel="noopener noreferrer" class="reveal opacity-0 translate-y-6 rounded-2xl border border-white/10 bg-slate-900/80 px-6 py-5 text-left shadow-lg transition-transform duration-300 ease-out hover:-translate-y-2 hover:scale-105 hover:shadow-2xl hover:bg-slate-900/95">
-            <img src="images/Icons/LinkedIn-Icon.svg" alt="LinkedIn Icon" class="w-12 h-12 mb-3 object-contain">
-            <p class="text-sm uppercase tracking-[0.35em] text-sky-400">LinkedIn</p>
-            <p class="mt-3 text-xl font-semibold">Connect professionally</p>
-            <p class="mt-2 text-slate-400">Share your profile and let's discuss opportunities.</p>
-          </a>
-          <a href="https://github.com/DominicHonrado" target="_blank" rel="noopener noreferrer" class="reveal opacity-0 translate-y-6 rounded-2xl border border-white/10 bg-slate-900/80 px-6 py-5 text-left shadow-lg transition-transform duration-300 ease-out hover:-translate-y-2 hover:scale-105 hover:shadow-2xl hover:bg-slate-900/95">
-            <img src="images/Icons/Github-Icon.svg" alt="GitHub Icon" class="w-12 h-12 mb-3 object-contain">
-            <p class="text-sm uppercase tracking-[0.35em] text-sky-400">GitHub</p>
-            <p class="mt-3 text-xl font-semibold">View my projects</p>
-            <p class="mt-2 text-slate-400">Browse code samples, apps, and repositories I've built.</p>
-          </a>
+    <!-- ==========================================
+         MAIN CONTENT - Contact page sections
+         ========================================== -->
+    <div class="pt-24 mx-auto max-w-4xl px-6 py-8">
+        <!-- Page header -->
+        <div class="text-center mb-8">
+            <h1 class="text-4xl sm:text-5xl font-bold mb-4">Contact Me</h1>
+            <p class="text-lg sm:text-xl text-slate-300">Feel free to reach out if you have any questions or would like to collaborate!</p>
         </div>
-      </section>
+
+        <!-- Contact sections -->
+        <div class="space-y-6">
+            <!-- Get In Touch section -->
+            <section class="reveal opacity-0 translate-y-6 rounded-3xl border border-white/10 bg-slate-900/70 p-6 shadow-2xl transition-all duration-700 ease-out">
+                <h2 class="text-2xl font-semibold mb-4 text-emerald-400">Get In Touch</h2>
+                <p class="text-slate-300 mb-6">I'm always open to discussing new opportunities, interesting projects, or just having a chat about technology.</p>
+                <div class="grid gap-4 sm:grid-cols-2">
+                    <!-- LinkedIn Contact Card -->
+                    <a href="https://www.linkedin.com/in/dominic-honrado" target="_blank" rel="noopener noreferrer" class="reveal opacity-0 translate-y-6 rounded-2xl border border-white/10 bg-slate-900/80 px-6 py-5 text-left shadow-lg transition-transform duration-300 ease-out hover:-translate-y-2 hover:scale-105 hover:shadow-2xl hover:bg-slate-900/95">
+                        <img src="images/Icons/LinkedIn-Icon.svg" alt="LinkedIn Icon" class="w-12 h-12 mb-3 object-contain">
+                        <p class="text-sm uppercase tracking-[0.35em] text-sky-400">LinkedIn</p>
+                        <p class="mt-3 text-xl font-semibold">Connect professionally</p>
+                        <p class="mt-2 text-slate-400">Share your profile and let's discuss opportunities.</p>
+                    </a>
+
+                    <!-- GitHub Contact Card -->
+                    <a href="https://github.com/DominicHonrado" target="_blank" rel="noopener noreferrer" class="reveal opacity-0 translate-y-6 rounded-2xl border border-white/10 bg-slate-900/80 px-6 py-5 text-left shadow-lg transition-transform duration-300 ease-out hover:-translate-y-2 hover:scale-105 hover:shadow-2xl hover:bg-slate-900/95">
+                        <img src="images/Icons/Github-Icon.svg" alt="GitHub Icon" class="w-12 h-12 mb-3 object-contain">
+                        <p class="text-sm uppercase tracking-[0.35em] text-sky-400">GitHub</p>
+                        <p class="mt-3 text-xl font-semibold">View my projects</p>
+                        <p class="mt-2 text-slate-400">Browse code samples, apps, and repositories I've built.</p>
+                    </a>
+                </div>
+            </section>
+        </div>
     </div>
-  </div>
   <script src="scripts.js"></script>
 </body>
 </html>

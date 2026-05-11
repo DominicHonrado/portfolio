@@ -1,15 +1,24 @@
+/* ==========================================
+   NAVIGATION FUNCTIONS - Mobile menu and active links
+   ========================================== */
+
+/**
+ * Initializes navigation functionality including mobile menu toggle and active link highlighting
+ */
 function initNavigation() {
   const navToggle = document.getElementById('nav-toggle');
   const navLinks = document.getElementById('nav-links');
   const links = document.querySelectorAll('#nav-links a');
   const currentPage = window.location.pathname.split('/').pop() || 'index.html';
 
+  // Mobile menu toggle functionality
   if (navToggle && navLinks) {
     navToggle.addEventListener('click', () => {
       navLinks.classList.toggle('hidden');
     });
   }
 
+  // Active link highlighting and mobile menu auto-close
   links.forEach((link) => {
     const linkHref = link.getAttribute('href');
     if (linkHref === currentPage || (currentPage === '' && linkHref === 'index.html')) {
@@ -25,6 +34,13 @@ function initNavigation() {
   });
 }
 
+/* ==========================================
+   ANIMATION FUNCTIONS - Scroll reveal effects
+   ========================================== */
+
+/**
+ * Initializes scroll-based reveal animations using Intersection Observer
+ */
 function initReveal() {
   const revealElements = document.querySelectorAll('.reveal');
   if (revealElements.length === 0) {
@@ -46,6 +62,13 @@ function initReveal() {
   });
 }
 
+/* ==========================================
+   DYNAMIC CONTENT FUNCTIONS - Auto-updating stats
+   ========================================== */
+
+/**
+ * Updates dynamic statistics on the home page (certifications count and years coding)
+ */
 function updateStats() {
   // Update certifications count by fetching and parsing certifications.html
   fetch('certifications.html')
@@ -60,7 +83,7 @@ function updateStats() {
     })
     .catch(err => console.error('Error fetching certifications:', err));
 
-  // Update years coding
+  // Update years coding based on current year
   const startYear = 2024;
   const currentYear = new Date().getFullYear();
   const years = currentYear - startYear;
@@ -68,12 +91,18 @@ function updateStats() {
   if (yearsElement) yearsElement.textContent = years;
 }
 
+/* ==========================================
+   EVENT LISTENERS - Page load and navigation events
+   ========================================== */
+
+// Initialize all functionality when DOM is loaded
 document.addEventListener('DOMContentLoaded', () => {
   initNavigation();
   initReveal();
   updateStats();
 });
 
+// Re-initialize reveals on page navigation (for back/forward buttons)
 window.addEventListener('pageshow', () => {
   initReveal();
 });

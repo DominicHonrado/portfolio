@@ -1,15 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Certifications | Dominic Austin Honrado</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
-  <script src="https://cdn.tailwindcss.com"></script>
-</head>
+    <!-- ==========================================
+         HEAD SECTION - Meta tags, fonts, styles
+         ========================================== -->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Certifications | Dominic Austin Honrado</title>
+
+        <!-- Font preloading for better performance -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+
+        <!-- External stylesheets -->
+        <link rel="stylesheet" href="styles.css">
+        <script src="https://cdn.tailwindcss.com"></script>
+    </head>
 <body class="min-h-screen bg-slate-950 text-white">
   <!-- Navigation bar -->
   <header class="fixed top-0 w-full bg-slate-950/90 backdrop-blur-sm border-b border-white/10 z-10">
@@ -34,62 +41,83 @@
       </div>
     </nav>
   </header>
-  <div class="pt-24 mx-auto max-w-4xl px-6 py-8">
-    <div class="text-center mb-8">
-      <h1 class="text-4xl sm:text-5xl font-bold mb-4">Certifications</h1>
-      <p class="text-lg sm:text-xl text-slate-300">Here are the certifications I have obtained.</p>
-    </div>
-    <div class="space-y-6">
-      <section class="reveal opacity-0 translate-y-6 rounded-3xl border border-white/10 bg-slate-900/70 p-6 shadow-2xl transition-all duration-700 ease-out">
-        <h2 class="text-2xl font-semibold mb-4 text-sky-400">Verified Skills</h2>
-        <p class="text-slate-300 mb-6">These certificates demonstrate the training and knowledge I've earned across programming, productivity, and presentation tools.</p>
-        <!-- To add official certificate URLs, replace '#' in the onclick functions below with the actual URLs -->
-        <div class="grid gap-4 grid-cols-3 sm:grid-cols-3">
-          <div class="reveal opacity-0 translate-y-6 rounded-2xl border border-white/10 bg-slate-900/75 p-4 text-center shadow-xl transition-transform duration-300 ease-out hover:-translate-y-2 hover:scale-105 hover:shadow-2xl hover:bg-slate-900/90">
-            <img src="images/Certificates/Cert-Java.png" alt="Information Technology Specialist (Java) Certificate" class="mx-auto h-auto w-auto rounded-lg mb-3 cursor-pointer" data-cert-image="images/Certificates/Cert-Java.png" data-cert-title="Information Technology Specialist (Java)" data-cert-description="Java language fundamentals and software development concepts." data-cert-url="https://www.certiport.com/portal/Pages/PrintTranscriptInfo.aspx?action=Cert&id=472&cvid=3kv2PLH9H3p/mixLwfAxQg==">
-            <h3 class="text-lg font-semibold mb-2">Information Technology Specialist (Java)</h3>
-            <p class="text-sm text-slate-400 mb-3">Java language fundamentals and software development concepts.</p>
-            <a href="https://www.certiport.com/portal/Pages/PrintTranscriptInfo.aspx?action=Cert&id=472&cvid=3kv2PLH9H3p/mixLwfAxQg==" target="_blank" rel="noopener noreferrer" class="inline-block bg-emerald-600 hover:bg-emerald-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition">View Official Certificate</a>
-          </div>
-          <div class="reveal opacity-0 translate-y-6 rounded-2xl border border-white/10 bg-slate-900/75 p-4 text-center shadow-xl transition-transform duration-300 ease-out hover:-translate-y-2 hover:scale-105 hover:shadow-2xl hover:bg-slate-900/90">
-            <img src="images/Certificates/Cert-Word.png" alt="Microsoft Office Specialist (Word) Certificate" class="mx-auto h-auto w-auto rounded-lg mb-3 cursor-pointer" data-cert-image="images/Certificates/Cert-Word.png" data-cert-title="Microsoft Office Specialist (Word)" data-cert-description="Document creation, formatting, and professional workflow skills." data-cert-url="https://www.certiport.com/portal/Pages/PrintTranscriptInfo.aspx?action=Cert&id=498&cvid=X/m/khmBfw34TdTD54qMdA==">
-            <h3 class="text-lg font-semibold mb-2">Microsoft Office Specialist (Word)</h3>
-            <p class="text-sm text-slate-400 mb-3">Document creation, formatting, and professional workflow skills.</p>
-            <a href="https://www.certiport.com/portal/Pages/PrintTranscriptInfo.aspx?action=Cert&id=498&cvid=X/m/khmBfw34TdTD54qMdA==" target="_blank" rel="noopener noreferrer" class="inline-block bg-emerald-600 hover:bg-emerald-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition">View Official Certificate</a>
-          </div>
-          <div class="reveal opacity-0 translate-y-6 rounded-2xl border border-white/10 bg-slate-900/75 p-4 text-center shadow-xl transition-transform duration-300 ease-out hover:-translate-y-2 hover:scale-105 hover:shadow-2xl hover:bg-slate-900/90">
-            <img src="images/Certificates/Cert-PPT.png" alt="Microsoft Office Specialist (PowerPoint) Certificate" class="mx-auto h-auto w-auto rounded-lg mb-3 cursor-pointer" data-cert-image="images/Certificates/Cert-PPT.png" data-cert-title="Microsoft Office Specialist (PowerPoint)" data-cert-description="Presentation design, slide structure, and visual communication." data-cert-url="https://www.certiport.com/portal/Pages/PrintTranscriptInfo.aspx?action=Cert&id=500&cvid=qCivG9l3gfF6cPT9hQV2Kg==">
-            <h3 class="text-lg font-semibold mb-2">Microsoft Office Specialist (PowerPoint)</h3>
-            <p class="text-sm text-slate-400 mb-3">Presentation design, slide structure, and visual communication.</p>
-            <a href="https://www.certiport.com/portal/Pages/PrintTranscriptInfo.aspx?action=Cert&id=500&cvid=qCivG9l3gfF6cPT9hQV2Kg==" target="_blank" rel="noopener noreferrer" class="inline-block bg-emerald-600 hover:bg-emerald-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition">View Official Certificate</a>
-          </div>
+    <!-- ==========================================
+         MAIN CONTENT - Certifications page sections
+         ========================================== -->
+    <div class="pt-24 mx-auto max-w-4xl px-6 py-8">
+        <!-- Page header -->
+        <div class="text-center mb-8">
+            <h1 class="text-4xl sm:text-5xl font-bold mb-4">Certifications</h1>
+            <p class="text-lg sm:text-xl text-slate-300">Here are the certifications I have obtained.</p>
         </div>
-      </section>
-    </div>
-  </div>
 
-  <!-- Certificate Modal -->
-  <div id="certificate-modal" class="fixed inset-0 bg-black/80 backdrop-blur-sm hidden z-50 flex items-center justify-center p-4">
-    <div class="bg-slate-900 rounded-2xl border border-white/10 max-w-4xl w-full max-h-[90vh] overflow-hidden shadow-2xl">
-      <div class="p-6 border-b border-white/10 flex items-center justify-between">
-        <h3 id="modal-title" class="text-2xl font-semibold text-white"></h3>
-        <button data-close-modal class="text-slate-400 hover:text-white text-2xl transition">&times;</button>
-      </div>
-      <div class="p-6">
-        <img id="modal-image" src="" alt="Certificate" class="w-full h-auto max-h-[60vh] object-contain rounded-lg mb-4">
-        <p id="modal-description" class="text-slate-300 mb-4"></p>
-        <div class="flex gap-3">
-          <a id="view-official-btn" href="#" target="_blank" class="inline-block bg-emerald-600 hover:bg-emerald-700 text-white px-6 py-2 rounded-lg font-medium transition">
-            View Official Certificate
-          </a>
-          <button data-close-modal class="bg-slate-700 hover:bg-slate-600 text-white px-6 py-2 rounded-lg font-medium transition">
-            Close
-          </button>
+        <!-- Certifications sections -->
+        <div class="space-y-6">
+            <!-- Verified Skills section -->
+            <section class="reveal opacity-0 translate-y-6 rounded-3xl border border-white/10 bg-slate-900/70 p-6 shadow-2xl transition-all duration-700 ease-out">
+                <h2 class="text-2xl font-semibold mb-4 text-sky-400">Verified Skills</h2>
+                <p class="text-slate-300 mb-6">These certificates demonstrate the training and knowledge I've earned across programming, productivity, and presentation tools.</p>
+                <!-- To add official certificate URLs, replace '#' in the onclick functions below with the actual URLs -->
+                <div class="grid gap-4 grid-cols-3 sm:grid-cols-3">
+                    <!-- Java Certificate Card -->
+                    <div class="reveal opacity-0 translate-y-6 rounded-2xl border border-white/10 bg-slate-900/75 p-4 text-center shadow-xl transition-transform duration-300 ease-out hover:-translate-y-2 hover:scale-105 hover:shadow-2xl hover:bg-slate-900/90">
+                        <img src="images/Certificates/Cert-Java.png" alt="Information Technology Specialist (Java) Certificate" class="mx-auto h-auto w-auto rounded-lg mb-3 cursor-pointer" data-cert-image="images/Certificates/Cert-Java.png" data-cert-title="Information Technology Specialist (Java)" data-cert-description="Java language fundamentals and software development concepts." data-cert-url="https://www.certiport.com/portal/Pages/PrintTranscriptInfo.aspx?action=Cert&id=472&cvid=3kv2PLH9H3p/mixLwfAxQg==">
+                        <h3 class="text-lg font-semibold mb-2">Information Technology Specialist (Java)</h3>
+                        <p class="text-sm text-slate-400 mb-3">Java language fundamentals and software development concepts.</p>
+                        <a href="https://www.certiport.com/portal/Pages/PrintTranscriptInfo.aspx?action=Cert&id=472&cvid=3kv2PLH9H3p/mixLwfAxQg==" target="_blank" rel="noopener noreferrer" class="inline-block bg-emerald-600 hover:bg-emerald-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition">View Official Certificate</a>
+                    </div>
+
+                    <!-- Word Certificate Card -->
+                    <div class="reveal opacity-0 translate-y-6 rounded-2xl border border-white/10 bg-slate-900/75 p-4 text-center shadow-xl transition-transform duration-300 ease-out hover:-translate-y-2 hover:scale-105 hover:shadow-2xl hover:bg-slate-900/90">
+                        <img src="images/Certificates/Cert-Word.png" alt="Microsoft Office Specialist (Word) Certificate" class="mx-auto h-auto w-auto rounded-lg mb-3 cursor-pointer" data-cert-image="images/Certificates/Cert-Word.png" data-cert-title="Microsoft Office Specialist (Word)" data-cert-description="Document creation, formatting, and professional workflow skills." data-cert-url="https://www.certiport.com/portal/Pages/PrintTranscriptInfo.aspx?action=Cert&id=498&cvid=X/m/khmBfw34TdTD54qMdA==">
+                        <h3 class="text-lg font-semibold mb-2">Microsoft Office Specialist (Word)</h3>
+                        <p class="text-sm text-slate-400 mb-3">Document creation, formatting, and professional workflow skills.</p>
+                        <a href="https://www.certiport.com/portal/Pages/PrintTranscriptInfo.aspx?action=Cert&id=498&cvid=X/m/khmBfw34TdTD54qMdA==" target="_blank" rel="noopener noreferrer" class="inline-block bg-emerald-600 hover:bg-emerald-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition">View Official Certificate</a>
+                    </div>
+
+                    <!-- PowerPoint Certificate Card -->
+                    <div class="reveal opacity-0 translate-y-6 rounded-2xl border border-white/10 bg-slate-900/75 p-4 text-center shadow-xl transition-transform duration-300 ease-out hover:-translate-y-2 hover:scale-105 hover:shadow-2xl hover:bg-slate-900/90">
+                        <img src="images/Certificates/Cert-PPT.png" alt="Microsoft Office Specialist (PowerPoint) Certificate" class="mx-auto h-auto w-auto rounded-lg mb-3 cursor-pointer" data-cert-image="images/Certificates/Cert-PPT.png" data-cert-title="Microsoft Office Specialist (PowerPoint)" data-cert-description="Presentation design, slide structure, and visual communication." data-cert-url="https://www.certiport.com/portal/Pages/PrintTranscriptInfo.aspx?action=Cert&id=500&cvid=qCivG9l3gfF6cPT9hQV2Kg==">
+                        <h3 class="text-lg font-semibold mb-2">Microsoft Office Specialist (PowerPoint)</h3>
+                        <p class="text-sm text-slate-400 mb-3">Presentation design, slide structure, and visual communication.</p>
+                        <a href="https://www.certiport.com/portal/Pages/PrintTranscriptInfo.aspx?action=Cert&id=500&cvid=qCivG9l3gfF6cPT9hQV2Kg==" target="_blank" rel="noopener noreferrer" class="inline-block bg-emerald-600 hover:bg-emerald-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition">View Official Certificate</a>
+                    </div>
+                </div>
+            </section>
         </div>
-      </div>
     </div>
-  </div>
-  <script src="scripts.js"></script>
-  <script src="certifications.js"></script>
+
+    <!-- ==========================================
+         MODAL SECTION - Certificate enlargement modal
+         ========================================== -->
+    <!-- Certificate Modal -->
+    <div id="certificate-modal" class="fixed inset-0 bg-black/80 backdrop-blur-sm hidden z-50 flex items-center justify-center p-4">
+        <div class="bg-slate-900 rounded-2xl border border-white/10 max-w-4xl w-full max-h-[90vh] overflow-hidden shadow-2xl">
+            <!-- Modal header -->
+            <div class="p-6 border-b border-white/10 flex items-center justify-between">
+                <h3 id="modal-title" class="text-2xl font-semibold text-white"></h3>
+                <button data-close-modal class="text-slate-400 hover:text-white text-2xl transition">&times;</button>
+            </div>
+
+            <!-- Modal content -->
+            <div class="p-6">
+                <img id="modal-image" src="" alt="Certificate" class="w-full h-auto max-h-[60vh] object-contain rounded-lg mb-4">
+                <p id="modal-description" class="text-slate-300 mb-4"></p>
+                <div class="flex gap-3">
+                    <a id="view-official-btn" href="#" target="_blank" class="inline-block bg-emerald-600 hover:bg-emerald-700 text-white px-6 py-2 rounded-lg font-medium transition">
+                        View Official Certificate
+                    </a>
+                    <button data-close-modal class="bg-slate-700 hover:bg-slate-600 text-white px-6 py-2 rounded-lg font-medium transition">
+                        Close
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ==========================================
+         SCRIPTS SECTION - JavaScript files
+         ========================================== -->
+    <script src="scripts.js"></script>
+    <script src="certifications.js"></script>
 </body>
 </html>

@@ -1,25 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+    <!-- ==========================================
+         HEAD SECTION - Meta tags, fonts, styles
+         ========================================== -->
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Web Portfolio | Dominic Austin Honrado</title>
+
+        <!-- Font preloading for better performance -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+
+        <!-- External stylesheets -->
         <link rel="stylesheet" href="styles.css">
         <script src="https://cdn.tailwindcss.com"></script>
     </head>
+    <!-- ==========================================
+         BODY SECTION - Main content and scripts
+         ========================================== -->
     <body class="min-h-screen bg-slate-950 text-white">
-        <!-- Main hero section: name, intro text, and navigation buttons -->
+        <!-- ==========================================
+             HERO SECTION - Main landing area with profile
+             ========================================== -->
         <main class="reveal opacity-0 translate-y-6 hero-bg relative mx-auto flex min-h-screen flex-col items-center justify-center gap-8 px-6 py-10 text-center pt-24 transition-all duration-700 ease-out">
+            <!-- Profile Image with floating animation -->
             <img src="images/Id-Picture.png" alt="ID Picture" class="floating h-40 w-40 rounded-full border-4 border-white/20 object-cover shadow-2xl hover:shadow-cyan-500/50 transition-shadow duration-300">
+
+            <!-- Name and Introduction -->
             <div class="max-w-2xl">
                 <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight bg-gradient-to-r from-cyan-400 to-violet-500 bg-clip-text text-transparent">Dominic Austin Honrado</h1>
                 <p class="mt-2 text-lg sm:text-xl text-cyan-300 font-medium">Full Stack Developer & Tech Enthusiast</p>
                 <p class="mt-4 text-lg sm:text-xl text-slate-300 leading-relaxed">Aspiring full stack developer inspired to expand my knowledge and producing real results through innovative solutions.</p>
             </div>
-            <!-- Stats Section -->
+
+            <!-- ==========================================
+                 STATS SECTION - Key achievements/metrics
+                 ========================================== -->
             <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-md sm:max-w-lg mx-auto">
                 <div class="text-center">
                     <div class="text-2xl sm:text-3xl font-bold text-cyan-400 certifications-count">3</div>
@@ -34,8 +52,13 @@
                     <div class="text-sm text-slate-400">Learning</div>
                 </div>
             </div>
-            <!-- Section Divider -->
+
+            <!-- Visual separator -->
             <div class="w-24 h-px bg-gradient-to-r from-transparent via-cyan-400 to-transparent"></div>
+
+            <!-- ==========================================
+                 NAVIGATION SECTION - Links to other pages
+                 ========================================== -->
             <div class="flex flex-wrap justify-center gap-4">
                 <nav aria-label="Portfolio sections" class="flex flex-wrap justify-center gap-2 rounded-full border border-white/10 bg-slate-900/50 p-1 shadow-inner">
                     <a href="about.html" class="rounded-full px-6 py-3 text-base font-semibold text-slate-300 transition hover:bg-cyan-600 hover:text-white hover:scale-105 hover:shadow-lg">About Me</a>
@@ -45,6 +68,10 @@
                 </nav>
             </div>
         </main>
-    <script src="scripts.js"></script>
+
+        <!-- ==========================================
+             SCRIPTS SECTION - JavaScript files
+             ========================================== -->
+        <script src="scripts.js"></script>
     </body>
 </html>

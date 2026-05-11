@@ -1,3 +1,7 @@
+/* ==========================================
+   GLOBAL STYLES - Base typography and fonts
+   ========================================== */
+
 body {
   font-family: 'Inter', sans-serif;
 }
@@ -6,17 +10,29 @@ h1, h2, h3, h4, h5, h6, .font-bold, .font-semibold {
   font-family: 'Space Grotesk', sans-serif;
 }
 
+/* ==========================================
+   ANIMATIONS - Keyframe definitions
+   ========================================== */
+
 /* Floating animation for profile image */
 @keyframes float {
   0%, 100% { transform: translateY(0px); }
   50% { transform: translateY(-10px); }
 }
 
+/* ==========================================
+   UTILITY CLASSES - Reusable CSS classes
+   ========================================== */
+
 .floating {
   animation: float 3s ease-in-out infinite;
 }
 
-/* Decorative background elements */
+/* ==========================================
+   COMPONENT STYLES - Specific element styling
+   ========================================== */
+
+/* Decorative background elements for hero section */
 .hero-bg::before {
   content: '';
   position: absolute;
